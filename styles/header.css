@@ -1,0 +1,39 @@
+
+
+.cabeçalho__menu-hamburguer {
+    width: 36px; /*Largura*/
+    height: 36px; /*Altura*/
+    background-image: url("../img/Menu.svg");
+    background-repeat: no-repeat; /*Nao repetir a imagem*/
+    background-position: center;  /*Deixar hamburguer no centro*/
+    display: inline-block; /*inline-block permite mudança de altura e largura */
+}
+
+/*A propriedade CSS display: flex; aplicada em um elemento HTML, o transforma em um flex-container e os outros elementos que estão dentro se transformam em flex-itens. Com elementos flexíveis o nosso layout passa a ser responsivo, podendo ser organizados automaticamente de acordo com o tamanho da tela*/
+
+.cabeçalho {
+    background-color: var(--branco); 
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    position: relative; /*O position: relative nos permite inserir outros atributos como top, left, right e bottom, que são, respectivamente, topo, esquerda, direita e baixo. */
+}
+
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.container__imagem {
+    padding: 1em;
+}
+
+.lista-menu { /*sumir com a lista (esconder)*/
+    display: none;
+    position: absolute; /* o position: absolute nos permite movimentar o elemento de acordo com outro que veio antes ou que é o "pai", e que esteja em uma position diferente de "estática", que é a padrão. Queríamos que a lista se movesse de acordo com o cabeçalho, que ficasse abaixo do cabeçalho. Por isso, inserimos um position: relative no cabeçalho para que ficasse diferente de estática*/
+    top: 100%; /* tirou 100% do cabeçalho e ficou para baixo */
+}
+
+.container__botao:checked ~ .lista-menu { /*Qunado apertar o botao aparecer lista*/
+    display: block;
+}
