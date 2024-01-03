@@ -30,10 +30,37 @@
 
 .lista-menu { /*sumir com a lista (esconder)*/
     display: none;
+   
     position: absolute; /* o position: absolute nos permite movimentar o elemento de acordo com outro que veio antes ou que é o "pai", e que esteja em uma position diferente de "estática", que é a padrão. Queríamos que a lista se movesse de acordo com o cabeçalho, que ficasse abaixo do cabeçalho. Por isso, inserimos um position: relative no cabeçalho para que ficasse diferente de estática*/
-    top: 100%; /* tirou 100% do cabeçalho e ficou para baixo */
+   
+    top: 100%; /* 100% depois do cabbeçalho */
+
+    width: 60vw; /*lista chegar ate o coracao ('vw pega a largura da tela 60% da tela') */
 }
 
 .container__botao:checked ~ .lista-menu { /*Qunado apertar o botao aparecer lista*/
     display: block;
+}
+
+.lista-menu__titulo, .lista-menu__item {
+    padding: 1em;
+    background-color: var(--branco);
+}
+
+.lista-menu__titulo{
+    color: var(--laranja);
+    font-weight: 700;
+}
+
+.lista-menu__link {
+    background: var(--azul-degrade); /*aplica background mais não aplica na fonte*/
+    -webkit-background-clip: text; /*para funcionar em outros tipos de navegadores*/
+    -webkit-background-fill-color:transparent;
+    background-clip: text; /*vai prender o background só onde tem texto e aplicar*/
+    text-transform: uppercase; /*letra maiuscula*/
+    text-decoration: none; /*tirar sublinhado*/
+}
+
+.container__botao { /*nao aparecer caixa de check*/
+    display: none;
 }
