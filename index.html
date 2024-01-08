@@ -14,42 +14,46 @@
 </head>
 
 <body>
-<header class="cabeçalho"> 
-    <div class="container">
-        <input type="checkbox" id="menu" class="container__botao"> <!--guarda o evento de click-->
-        <label for="menu"> <!--Associar todos os elementos que estao dentro dele com outro atraves do id-->
-            <span class="cabeçalho__menu-hamburguer container__imagem"></span> <!--o menu hamburguer foi colocado como spam pois nao é uma imagem estatica mudara a imagem quando clicado, que sera o backkground image desse spam-->
-        </label>
-        <ul class="lista-menu">
-            <li class="lista-menu__titulo">Categorias</li>
-            <li class="lista-menu__item">
-                <a href="#" class="lista-menu__link">Programação</a>
-            </li>
-            <li class="lista-menu__item">
-                <a href="#" class="lista-menu__link">Front-end</a>
-            </li>
-            <li class="lista-menu__item">
-                <a href="#" class="lista-menu__link">Infraestrutura</a>
-            </li>
-            <li class="lista-menu__item">
-                <a href="#" class="lista-menu__link">Business</a>
-            </li>
-            <li class="lista-menu__item">
-                <a href="#" class="lista-menu__link">Designe & UX</a>
-            </li>
-        </ul>
-        <img src="img/Logo.svg" alt="Logo da Alurabooks" class="container__imagem">
-    </div>
+    <header class="cabeçalho"> 
+        <div class="container">
+            <input type="checkbox" id="menu" class="container__botao"> <!--guarda o evento de click-->
+            <label for="menu"> <!--Associar todos os elementos que estao dentro dele com outro atraves do id-->
+                <span class="cabeçalho__menu-hamburguer container__imagem"></span> <!--o menu hamburguer foi colocado como spam pois nao é uma imagem estatica mudara a imagem quando clicado, que sera o backkground image desse spam-->
+            </label>
+            <ul class="lista-menu">
+                <li class="lista-menu__titulo">Categorias</li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Programação</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Front-end</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Infraestrutura</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Business</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Designe & UX</a>
+                </li>
+            </ul>
+            <img src="img/Logo.svg" alt="Logo da Alurabooks" class="container__imagem">
+        </div>
 
-    <div class="container">
-        <a href="#"><img src="img/Favoritos.svg" alt="Meus favoritos" class="container__imagem"></a> <!--Estao dentro do "a" pois as imagem redirecinaram para as paginas requeridas-->
+        <div class="container">
+            <a href="#"><img src="img/Favoritos.svg" alt="Meus favoritos" class="container__imagem"></a> <!--Estao dentro do "a" pois as imagem redirecinaram para as paginas requeridas-->
 
-        <a href="#"><img src="img/Compras.svg" alt="Carrinho de compras" class="container__imagem"></a>
+            <a href="#"><img src="img/Compras.svg" alt="Carrinho de compras" class="container__imagem"></a>
 
-        <a href="#"><img src="img/Usuário.svg" alt="Meu perfil" class="container__imagem"></a>
-    </div>
-</header>
-
+            <a href="#"><img src="img/Usuário.svg" alt="Meu perfil" class="container__imagem"></a>
+        </div>
+    </header>
+    <section class="banner"> <!--banner com pesquisa-->
+        <h2 class="banner__titulo">Já sabe por onde começar?</h2>
+        <p class="banner__texto">Encontre em nossa estante o que precisa para seu desenvolvimento!</p>
+        <input type="search" class="banner__pesquisa" placeholder="Qual será sua próxima leitura?">
+    </section>
 
 
 </body>
